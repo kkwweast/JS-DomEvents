@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Exercises</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="main.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Document</title>
 </head>
-
 <body>
-    <div class="exercise-container exercise1">
-        <h2>Exercise 1</h2>
-        <p id="node1"></p>
-        <p class="node2"></p>
-        <h3>Node1</h3>
-        <h3>Node2</h3>
-        <h3>Node3</h3>
+  
+  <!-- Trigger button for the modal -->
+  <button id="openModalBtn">Open Modal</button>
+
+  <!-- Modal container -->
+  <div id="modalContainer">
+    <!-- Modal content -->
+    <div id="modalContent" class="modal-card">
+      <!-- Close button -->
+      <button id="closeModalBtn" class="close-btn">X</button>
+      <!-- Your modal content goes here -->
+      <p>This is a centered modal.</p>
+    </div>
+  </div>
+   <main class="root">
+    <!-- Exercise 1 Container -->
+    <div id="exercise-container-exercise1" class="exercise-container">
+      <h2>Exercise 1</h2>
+      <div id="node1"></div>
     </div>
 
-    <!-- Exercise #2 -->
-    <div class="exercise-container exercise2">
-        <h2>Exercise 2</h2>
-        <div id="parent"></div>
+    <!-- Exercise 2 Container -->
+    <div id="container2" class="exercise-container">
+      <h2>Exercise 2</h2>
+      <div id="parent"></div>
     </div>
 
-    <!-- Exercise #3: Removing/Replacing elements/objects -->
+    <!-- Exercise 3 Container -->
     <div id="exercise-container3" class="exercise-container">
-        <h2>Exercise 3</h2>
-        <p id="N1">Child Node #3</p>
+      <h2>Exercise 3</h2>
+      <p id="N1">Child Node #1</p>
     </div>
 
-    <!-- Exercise #4: Elements from an array -->
-    <div class="exercise-container exercise4">
-        <h2>Exercise 4</h2>
-        <p id="N1">Child Node #4</p>
-        <div id="container"></div>
+    <!-- Exercise 4 Container -->
+    <div id="container" class="exercise-container">
+      <h2>Exercise 4</h2>
+      <div  id="container">
+        <!--ADD GROCERY LIST-->
+    </div>
     </div>
 
-    <!-- Exercise #5: DOM EVENTS -->
+    <!-- Exercise 5 Container -->
     <div class="exercise-container exercise5">
-        <h2>Exercise 5</h2>
-        <button id="Btn">View Modal</button>
-        <div id="modal">
-            <div class="modal-card">
-                <p>
-                    Clicking the button triggers the oneclick event, which
-                    function show()...which alerts the user
-                </p>
-                <button onclick="() => {document.getElementById('modal').remove()}">X</button>
-            </div>
-        </div>
+      <h2>Exercise 5</h2>
+      <button id="btn">View Model</button>
+      </div>
+      </main>
+    
+      <div class="modal-card" id="full-page-modal">
+        <p>
+          <!-- Your modal content goes here -->
+        </p>
+        <button onclick="document.getElementById('full-page-modal').style.display = 'none';">X</button>
+      </div>
     </div>
-
+    <script src="main.js" defer></script>
+  </main>
 </body>
-
 </html>
+
+
+
+
+
